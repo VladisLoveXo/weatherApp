@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  color: #ffffffe0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/sunset.jpg);
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: auto;
+  background-color: #060606a1;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 18px;
+  font-family: "Lato" sans-serif;
+  transition: 0.6s ease-out;
+  box-shadow: 48px -12px 29px 10px rgb(41 43 55 / 20%);
+}
+
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.search-box input {
+  color: #f7c4b0;
+  width: 84%;
+  background-color: #000000a6;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 28px;
+  padding: 6px 10px 6px;
+  border: 1px solid;
+  border-radius: 21px;
+  border-color: #654f4f4f;
+}
+
+
+.search-box input::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: e4f1fa85;
+  text-transform: capitalize;
+}
+.search-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: #f5f5f5d6;
+  background-color: #1313139e;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.4s ease;
+}
+
+.search-box button:hover {
+  color: #fff;
+  background-color: #000000;
+}
+
+.fa-location-dot {
+  position: absolute;
+  font-size: 31px;
+}
+
+.fa-water:before {
+  content: "\f773";
+  color: #00b6ff;
+}
+
+.fa-wind:before {
+  content: "\f72e";
+  color: #bdbdbd;
+}
+
+.weather {
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+.weather h1 {
+  font-size: 77px;
+  font-weight: 300;
+  color: #f3e9e9cc;
+}
+
+.weather h2 {
+  font-size: 70px;
+  font-weight: 200;
+  margin-top: 20px;
+  font-style: italic;
+  color: #f3e9e9cc;
+}
+
+.info {
+  font-size: 31px;
+  font-weight: 500;
+  margin-top: 17px;
+  color: #f3e9e9cc;
+  font-style: italic;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 20px;
+  padding: 0 20px;
+}
+
+.details i {
+  font-size: 80px;
+}
+
+.details p {
+  font-size: 28px;
+  color: #f3e9e9cc;
+}
+
+
+
