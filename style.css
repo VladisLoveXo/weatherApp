@@ -17,7 +17,7 @@ body {
 
 .container {
   position: relative;
-  width: 600px;
+  width: 700px;
   height: auto;
   background-color: #060606a1;
   padding: 28px 32px;
@@ -26,6 +26,8 @@ body {
   font-family: "Lato" sans-serif;
   transition: 0.6s ease-out;
   box-shadow: 48px -12px 29px 10px rgb(41 43 55 / 20%);
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .search-box {
@@ -44,7 +46,7 @@ body {
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  margin-left: 28px;
+  margin-left: 7px;
   padding: 6px 10px 6px;
   border: 1px solid;
   border-radius: 21px;
@@ -58,15 +60,27 @@ body {
   color: e4f1fa85;
   text-transform: capitalize;
 }
-.search-box button {
+.fa-magnifying-glass {
   cursor: pointer;
-  width: 50px;
+  min-width: 49px;
   height: 50px;
   color: #f5f5f5d6;
   background-color: #1313139e;
-  border-radius: 50%;
+  border-radius: 60%;
   font-size: 22px;
   transition: 0.4s ease;
+  margin-left: 5px;
+}
+.fa-location-dot {
+  cursor: pointer;
+  min-width: 49px;
+  height: 50px;
+  background-color: #1313139e;
+  border-radius: 60%;
+  font-size: 22px;
+  transition: 0.4s ease;
+  margin-left: 5px;
+ 
 }
 
 .search-box button:hover {
@@ -74,10 +88,6 @@ body {
   background-color: #000000;
 }
 
-.fa-location-dot {
-  position: absolute;
-  font-size: 31px;
-}
 
 .fa-water:before {
   content: "\f773";
@@ -89,10 +99,17 @@ body {
   color: #bdbdbd;
 }
 
+.water {
+  width: 100%;
+}
+
+.col {
+  width: 100%;
+}
+
 .weather {
   margin-top: 30px;
   text-align: center;
-  
 }
 
 .weather h1 {
@@ -104,25 +121,34 @@ body {
 .weather h2 {
   font-size: 70px;
   font-weight: 200;
-  margin-top: 20px;
   font-style: italic;
   color: #f3e9e9cc;
 }
 
 .info {
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #f3e9e9cc;
+  font-style: italic;
+}
+
+.feels_like {
   font-size: 31px;
-  font-weight: 500;
-  margin-top: 17px;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 10px;
   color: #f3e9e9cc;
   font-style: italic;
 }
 
 .details {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 40px 20px;
-  padding: 0 20px;
+  align-items: baseline;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+
 }
 
 .details i {
@@ -132,6 +158,45 @@ body {
 .details p {
   font-size: 28px;
   color: #f3e9e9cc;
+}
+/* .forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  flex-basis: 30%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.forecast-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+} */
+
+.description {
+  font-size: 14px;
+}
+
+@media (max-width: 460px) {
+  .weather h2 {
+    font-size: 60px;
+  }
+  .weather h1 {
+    font-size: 68px;
+}
+.details p {
+  font-size: 24px;
+}
+.col {
+  width: 100%;
+  margin-top: 15px;
+}
 }
 
 
