@@ -159,25 +159,6 @@ body {
   font-size: 28px;
   color: #f3e9e9cc;
 }
-/* .forecast {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.forecast-card {
-  flex-basis: 30%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-}
-
-.forecast-card img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 5px;
-} */
 
 .description {
   font-size: 14px;
